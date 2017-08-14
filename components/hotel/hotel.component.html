@@ -1,0 +1,60 @@
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-3">
+            <ul>
+                <li>Precio: {{ hotel.puntuacion.precio }}/10</li>
+                <li>Ubicacion: {{ hotel.puntuacion.ubicacion }}/10</li>
+                <li>Salud: {{ hotel.puntuacion.salud }}/10</li>
+                <li>Ubicacion: 7/10</li>
+                <li>Otros: 7/10</li>
+
+            </ul>
+            <button [routerLink]="['/hoteles']" type="button" class="btn btn-outline-primary btn-block">
+                Volver
+            </button>
+        </div>
+        <div class="col-md-9">
+            <h1>{{hotel.nombre}}</h1>
+            <img [src]="hotel.img" class="img-fluid" alt="">
+            <p>{{ hotel.bio }}</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quia harum enim ex nemo, odio itaque ad sunt veritatis ab, necessitatibus nobis hic minima. Ex laborum saepe repudiandae voluptatem beatae.</p>
+            <img src="assets/images/qth2.jpg" class="imgchica">
+            <img src="assets/images/qth3.jpg" class="imgchica">
+            <img src="assets/images/qth2.jpg" class="imgchica">
+            <img src="assets/images/qth.jpg" class="imgchica">
+            <img src="assets/images/qth3.jpg" class="imgchica">
+            <img src="assets/images/qth2.jpg" class="imgchica">
+            <img src="assets/images/qth3.jpg" class="imgchica">
+            <img src="assets/images/qth2.jpg" class="imgchica">
+            <img src="assets/images/qth.jpg" class="imgchica">
+            <img src="assets/images/qth3.jpg" class="imgchica">
+
+            <hr>
+            <h2>Comentarios:</h2>
+            <blockquote class="blockquote">
+                  <p class="mb-0">{{ hotel.comentarios[1] }}</p>
+                  <footer class="blockquote-footer"><cite title="Source Title">Matias Mendes</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                  <p class="mb-0">{{ hotel.comentarios[2] }}</p>
+                  <footer class="blockquote-footer"><cite title="Source Title">Matias Mendes</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                  <p class="mb-0">{{ hotel.comentarios[3] }}</p>
+                  <footer class="blockquote-footer"><cite title="Source Title">Matias Mendes</cite></footer>
+            </blockquote>
+
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

@@ -1,0 +1,30 @@
+<div class="container" id="hoteles">
+
+
+
+<br>
+<br>
+<br>
+    <div class="row">
+        <div class="card" *ngFor="let hotel of hoteles; let i = index">
+            <img class="card-img-top" src="{{hotel.img}}" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">{{ hotel.nombre }}</h4>
+                <p class="card-text">{{ hotel.bio }}</p>
+                <p><small>{{ hotel.rating }} / 10</small></p>
+                <button type="button" (click)="verHotel(i)" class="btn btn-outline-primary btn-block"> Ver mas</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
